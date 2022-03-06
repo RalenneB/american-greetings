@@ -46,7 +46,7 @@ let code = id("code"),
 //submit check
 
 const isFieldValid = (field) => {
-  if (field.value.trim() === "") {
+  if (!field.value || field.value.trim() === "") {
     return false;
   }
   return true;
