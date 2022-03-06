@@ -321,7 +321,7 @@
 
     .form-container {
       width: 50%;
-      min-width: 400px;
+      min-width: 340px;
       &__form {
         padding-left: 2%;
         border-left: 3px solid #739bac;
@@ -522,7 +522,7 @@
         background-color: #e8f0f3;
         width: 100%;
         padding: 2%;
-        height: 50px;
+        height: 55px;
 
         .header-search {
           border: none;
@@ -551,7 +551,7 @@
           font-size: 18px;
           border: none;
           float: left;
-          width: 15%;
+          width: 22%;
           background-color: #e8f0f3;
           color: #646363;
           font-weight: bold;
@@ -561,17 +561,21 @@
     .banner-container__content {
       width: 90%;
     }
+    .form-section {
+      .form-container__form {
+        border: none;
 
-    .img-container,
-    .form-container {
-      width: 100vh;
+        h2 {
+          text-align: center;
+        }
+      }
     }
 
-    .form-section .form-container__form {
-      border: none;
-
-      h2 {
-        text-align: center;
+    .form-section .img-container {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 80%;
       }
     }
 
@@ -586,6 +590,11 @@
     .about-text,
     .about-img {
       width: 100vh;
+    }
+  }
+  .screen .form-section .img-container {
+    img {
+      min-width: unset;
     }
   }
 }
