@@ -516,7 +516,7 @@
 }
 @media screen and (max-width: 420px) {
   .screen .header-container--mobile__search-bar input[type=text] {
-    width: 26%;
+    width: 30%;
   }
   .screen .form-section {
     padding: unset;
